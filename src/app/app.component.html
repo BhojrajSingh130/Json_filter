@@ -1,0 +1,14 @@
+<router-outlet></router-outlet>
+
+<table style="border: 2px; width: 50%;">
+  <tr>
+    <th>Name</th>
+    <th>Count</th>
+  </tr>
+  <tr *ngFor="let item of names">
+    <td [style.background-color] = "getColor(item.count)"> {{ item.name }} </td>
+    <td> {{ item.count }}  
+      
+    </td>
+  </tr>
+</table>
